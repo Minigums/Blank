@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notion-like Text Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="header-left">
+            <button class="hamburger-menu" title="Menu">&#9776;</button>
+            <span class="page-title"></span>
+        </div>
+        <div class="header-right">
+            <span class="word-count">0 words</span>
+            <button class="theme-toggle" title="Toggle Dark Mode">🌙</button>
+        </div>
+    </header>
+    <div class="sidebar-overlay"></div>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <span>Pages</span>
+            <button class="close-sidebar" title="Close">&times;</button>
+        </div>
+        <ul class="page-list"></ul>
+        <button class="add-page">+ New Page</button>
+    </nav>
+    <div class="editor-container">
+        <div id="editor" contenteditable="true" class="editor-content" data-placeholder="Start typing here..."></div>
+        <div class="floating-toolbar">
+            <button class="tool-btn" data-command="bold" title="Bold">B</button>
+            <button class="tool-btn" data-command="italic" title="Italic"><i>I</i></button>
+            <button class="tool-btn" data-command="underline" title="Underline"><u>U</u></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
