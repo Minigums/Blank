@@ -1,4 +1,4 @@
-# MinigumsEditor
+# BlankEditor
 ## Features
 - Local Browser Storage
 - Word Count Tracking
